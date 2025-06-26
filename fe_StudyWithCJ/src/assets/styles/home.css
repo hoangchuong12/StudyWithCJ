@@ -1,0 +1,8 @@
+.hero {
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+}
+
+img {
+  max-height: 300px;
+  object-fit: cover;
+}
