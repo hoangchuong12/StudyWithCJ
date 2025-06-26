@@ -1,0 +1,8 @@
+.about-hero {
+    background: linear-gradient(to right, #8ea0b3, #374d64);
+}
+
+.about-page img {
+    max-height: 300px;
+    object-fit: cover;
+}

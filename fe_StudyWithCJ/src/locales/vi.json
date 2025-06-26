@@ -1,0 +1,20 @@
+{
+    "home": {
+        "welcome": "Chào mừng đến với",
+        "description": "Nền tảng học tập cá nhân hóa cho người Việt"
+    },
+    "nav": {
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "courses": "Khóa học",
+        "contact": "Liên hệ"
+    },
+    "about": {
+        "About": "Giới thiệu về",
+        "description": "Nền tảng học tập cá nhân hóa, tiên tiến và thân thiện với người dùng"
+    },
+    "courses": {
+        "courses": "Danh sách khóa học",
+        "description": "Chọn khóa học phù hợp với mục tiêu của bạn"
+    }
+}

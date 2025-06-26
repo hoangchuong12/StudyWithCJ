@@ -1,0 +1,20 @@
+{
+    "home": {
+        "welcome": "Welcome to",
+        "description": "A personalized learning platform for Vietnamese people"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "courses": "Courses",
+        "contact": "Contact"
+    },
+    "about": {
+        "About": "About",
+        "description": "Personalized, advanced and user-friendly learning platform"
+    },
+    "courses": {
+        "courses": "Course list",
+        "description": "Choose the course that suits your goals"
+    }
+}
