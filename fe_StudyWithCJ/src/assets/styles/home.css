@@ -6,3 +6,33 @@ img {
   max-height: 300px;
   object-fit: cover;
 }
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 15s linear infinite;
+}
+
+.marquee-track img {
+  margin-right: 20px;
+  border-radius: 8px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

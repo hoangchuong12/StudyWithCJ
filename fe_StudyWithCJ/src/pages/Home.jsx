@@ -11,19 +11,19 @@ function Home() {
       title: '🎯 Học tập theo mục tiêu',
       description:
         'Lựa chọn lộ trình học phù hợp với bạn: luyện thi, nâng cao kỹ năng, hoặc học theo sở thích.',
-      img: '',
+      img: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
     {
       title: '🧠 Bài kiểm tra thông minh',
       description:
         'Sử dụng trí tuệ nhân tạo để tự động tạo ra bài kiểm tra phù hợp với trình độ người học.',
-      img: '',
+      img: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
     {
       title: '📊 Theo dõi tiến độ học tập',
       description:
         'Biểu đồ và bảng thống kê giúp bạn biết mình đã học được bao nhiêu và cần cải thiện chỗ nào.',
-      img: '',
+      img: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
   ]
 
@@ -51,6 +51,22 @@ function Home() {
       {sections.map((section, idx) => (
         <FeatureSection key={idx} {...section} reverse={idx % 2 === 1} />
       ))}
+      <motion.div className="marquee-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}>
+        <div className="marquee-track">
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="1" />
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="2" />
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="3" />
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="5" />
+          {/* repeat again to make infinite effect */}
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="2" />
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="3" />
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="4" />
+          <img src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg" alt="5" />
+        </div>
+      </motion.div>
     </div>
   )
 }
