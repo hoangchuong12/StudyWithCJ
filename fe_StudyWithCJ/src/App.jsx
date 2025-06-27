@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Footer from './components/Footer'
 import Courses from './pages/courses'
+import './App.css'
 
 function App() {
   return (
