@@ -1,0 +1,13 @@
+.login-btn {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff !important;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    color: #000 !important;
+    border-color: #fff;
+}

@@ -1,7 +1,14 @@
 {
     "home": {
         "welcome": "Chào mừng đến với",
-        "description": "Nền tảng học tập cá nhân hóa cho người Việt"
+        "description": "Nền tảng học tập cá nhân hóa cho người Việt",
+        "createProject": {
+            "startYourProject": "Lập kế hoạch học tập cá nhân hóa",
+            "requestADemo": "Yêu cầu bản demo"
+        },
+        "outstandingFeatures": "tính năng nổi bật",
+        "getStartedDescription": "Tham gia cùng chúng tôi hôm nay và bắt đầu hành trình học tập cá nhân hóa của bạn.",
+        "getStartedButton": "Bắt đầu học tập"
     },
     "nav": {
         "home": "Trang chủ",
@@ -16,5 +23,8 @@
     "courses": {
         "courses": "Danh sách khóa học",
         "description": "Chọn khóa học phù hợp với mục tiêu của bạn"
+    },
+    "header": {
+        "login": "Đăng nhập"
     }
 }

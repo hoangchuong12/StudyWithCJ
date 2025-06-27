@@ -1,7 +1,14 @@
 {
     "home": {
         "welcome": "Welcome to",
-        "description": "A personalized learning platform for Vietnamese people"
+        "description": "A personalized learning platform for Vietnamese people",
+        "createProject": {
+            "startYourProject": "Personalized learning paths",
+            "requestADemo": "AI-powered quizzes"
+        },
+        "outstandingFeatures": "outstanding features",
+        "getStartedDescription": "Join us today and start your personalized learning journey.",
+        "getStartedButton": "Get started"
     },
     "nav": {
         "home": "Home",
@@ -16,5 +23,8 @@
     "courses": {
         "courses": "Course list",
         "description": "Choose the course that suits your goals"
+    },
+    "header": {
+        "login": "Login"
     }
 }

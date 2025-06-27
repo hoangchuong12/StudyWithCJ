@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import '../assets/styles/Header.css'
 
 function Header() {
   const { t, i18n } = useTranslation()
@@ -7,6 +8,7 @@ function Header() {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
   }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -17,7 +19,8 @@ function Header() {
         </button>
 
         <div className="collapse navbar-collapse" id="mainNavbar">
-          <ul className="navbar-nav ms-auto">
+          {/* LEFT SIDE MENU */}
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">{t('nav.home')}</Link>
             </li>
@@ -28,10 +31,11 @@ function Header() {
               <Link className="nav-link" to="/khoa-hoc">{t('nav.courses')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/gioi-thieu">{t('nav.contact')}</Link>
+              <Link className="nav-link" to="/lien-he">{t('nav.contact')}</Link>
             </li>
-
           </ul>
+
+          {/* RIGHT SIDE - LANGUAGE + LOGIN */}
           <ul className="navbar-nav">
             <li className="nav-item d-flex align-items-center">
               <button
@@ -43,14 +47,22 @@ function Header() {
               </button>
               <button
                 onClick={() => changeLanguage('en')}
-                className="btn btn-outline-light btn-sm py-0 px-2"
+                className="btn btn-outline-light btn-sm py-0 px-2 me-3"
                 style={{ fontSize: '0.75rem' }}
               >
                 EN
               </button>
+              <Link
+                className="nav-link btn btn-outline-light btn-sm fw-bold login-btn"
+                to="/login"
+                style={{ fontSize: '0.85rem', padding: '2px 10px', marginRight: '8px' }}
+              >
+                {t('header.login') || 'Login'}
+              </Link>
+
+
             </li>
           </ul>
-
         </div>
       </div>
     </nav>
