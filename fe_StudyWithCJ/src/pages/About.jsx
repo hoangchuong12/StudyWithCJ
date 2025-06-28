@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
-import '../assets/styles/About.css'
+import '../assets/styles/About.scss'
 import { useTranslation } from 'react-i18next'
 
 function About() {
@@ -40,7 +40,7 @@ function About() {
           </div>
           <div className="col-md-6 text-center">
             <img
-              src="https://cdn.pixabay.com/photo/2017/06/26/02/47/student-2449726_1280.jpg"
+              src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg"
               className="img-fluid rounded shadow"
               alt="Sứ mệnh"
             />
@@ -59,7 +59,7 @@ function About() {
           </div>
           <div className="col-md-6 text-center">
             <img
-              src="https://cdn.pixabay.com/photo/2016/11/14/03/06/idea-1822454_1280.jpg"
+              src="https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg"
               className="img-fluid rounded shadow"
               alt="Tính năng"
             />

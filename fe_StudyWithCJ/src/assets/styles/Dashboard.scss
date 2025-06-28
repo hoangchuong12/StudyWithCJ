@@ -1,0 +1,73 @@
+    .admin-layout {
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: 120px;
+            gap: 16px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Item custom size */
+        .item-1 {
+            grid-row: span 4;
+        }
+
+        .item-2 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .item-3 {
+            grid-row: span 1;
+        }
+
+        .item-4 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item-5 {
+            grid-column: span 1;
+            grid-row: span 3;
+        }
+
+        .item-6 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .item-7 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+    }
+
+    .grid-item .card {
+        height: 100%;
+        width: 100%;
+        background-color: #fafafa;
+        /* Tùy chỉnh màu */
+        border-radius: 12px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+
+    .recharts-responsive-container {
+        width: 100% !important;
+        height: 100% !important;
+    }

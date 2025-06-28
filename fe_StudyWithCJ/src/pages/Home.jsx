@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import '../assets/styles/Home.css'
+import '../assets/styles/Home.scss'
 import { useTranslation } from 'react-i18next'
 
 function Home() {
@@ -67,24 +67,26 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="home-layout">
+        <motion.div
+          ref={ref}
+          className="grid-wrapper"
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="grid-item item-1">1</div>
+          <div className="grid-item item-2">2</div>
+          <div className="grid-item item-3">3</div>
+          <div className="grid-item item-4">4</div>
+          <div className="grid-item item-5">5</div>
+          <div className="grid-item item-6">6</div>
+          <div className="grid-item item-7">7</div>
+          <div className="grid-item item-8">8</div>
+          <div className="grid-item item-9">9</div>
+        </motion.div>
+      </div>
 
-      <motion.div
-        ref={ref}
-        className="grid-wrapper"
-        initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="grid-item item-1">1</div>
-        <div className="grid-item item-2">2</div>
-        <div className="grid-item item-3">3</div>
-        <div className="grid-item item-4">4</div>
-        <div className="grid-item item-5">5</div>
-        <div className="grid-item item-6">6</div>
-        <div className="grid-item item-7">7</div>
-        <div className="grid-item item-8">8</div>
-        <div className="grid-item item-9">9</div>
-      </motion.div>
 
       <FeatureSection />
 
@@ -133,7 +135,7 @@ function Home() {
       </div>
       <div className="video-wrapper container my-5">
         <video
-          src="/public/videos/myvideo.mp4"
+          src="../../public/videos/myvideo.mp4"
           autoPlay
           muted
           loop

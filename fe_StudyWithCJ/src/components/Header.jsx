@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import '../assets/styles/Header.css'
+import '../assets/styles/Header.scss'
 
 function Header() {
   const { t, i18n } = useTranslation()
@@ -10,7 +10,7 @@ function Header() {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="container">
         <Link className="navbar-brand" to="/">StudyWithCJ</Link>
 

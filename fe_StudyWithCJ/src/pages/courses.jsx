@@ -1,28 +1,28 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import '../assets/styles/Courses.css'
+import '../assets/styles/Courses.scss'
 
 const courses = [
     {
         title: '💻 Lập trình Web cơ bản',
         description: 'Học HTML, CSS, JavaScript từ cơ bản đến nâng cao.',
-        image: 'https://cdn.pixabay.com/photo/2017/08/10/07/32/web-2618405_1280.jpg',
+        image: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
     {
         title: '🧠 Kỹ năng tư duy phản biện',
         description: 'Rèn luyện tư duy logic, sáng tạo, và phân tích.',
-        image: 'https://cdn.pixabay.com/photo/2016/10/27/22/52/brain-1771449_1280.jpg',
+        image: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
     {
         title: '📈 Kinh tế học cơ bản',
         description: 'Hiểu các nguyên lý kinh tế và áp dụng thực tiễn.',
-        image: 'https://cdn.pixabay.com/photo/2016/03/27/21/16/analytics-1284725_1280.jpg',
+        image: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
     {
         title: '📝 Luyện thi THPT Quốc Gia',
         description: 'Tổng hợp kiến thức Toán, Lý, Hóa, Văn cho kỳ thi.',
-        image: 'https://cdn.pixabay.com/photo/2017/06/29/22/29/books-2458849_1280.jpg',
+        image: 'https://i.pinimg.com/736x/11/74/a2/1174a298a1ce096c1545c011f51aa7e9.jpg',
     },
 ]
 
